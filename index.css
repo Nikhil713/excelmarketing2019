@@ -2,6 +2,7 @@ body,html{
 	margin:0;
 	overflow-x: hidden;
 	font-family: 'Montserrat';
+	width:100vw;
 }
 
 		/* NAVBAR */
@@ -75,7 +76,8 @@ body,html{
 		}
 		.navbar-default .navbar-toggle .icon-bar {
 			color: black;
-			background-color: orange;
+			float:none;
+			background-color:rgb(255, 68, 0);
 		}
 		.navbar-default .navbar-collapse.collapse.in ul {
 			color:black;
@@ -104,7 +106,15 @@ body,html{
 			transition: height .001s ease;
 		
 		}
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 768px) {
+			.navbar-default .navbar-toggle .icon-bar 
+			{
+				
+			}
+			#nav
+			{
+				height:7vh;
+			}
 			.navbar-default .navbar-nav > li > a:visited {
 				color: black;
 				text-decoration: none;
@@ -191,6 +201,17 @@ body,html{
 
 	/* height: auto; */
 	/* display: none; */
+}
+@media (min-width: 1245px) and (max-width: 1800px) {
+	.logoimg{
+		}
+	.topExcel{
+		display: grid	;
+		justify-content: center;
+		align-items: center;
+		margin-bottom:50px;
+		margin-top:-7em;
+	}
 }
 
 #header {
@@ -743,6 +764,7 @@ body,html{
 			padding-top: 2.5em;
 			width:100vw;
 			height:58vh;
+			margin-bottom:-130px;
 			/* border: 3px solid red; */
 
 		}
@@ -765,6 +787,13 @@ body,html{
 				display: grid;
 				grid-template-rows: 2fr 5fr;
 			} */
+		}
+		@media (max-width: 768px)
+		{
+			.about{
+				height:auto;
+				margin-bottom:2vh;
+			}
 		}
                     /* WHY ASSOCIATE WITH EXCEL */
 				
@@ -818,7 +847,7 @@ body,html{
     	grid-column-gap: 3vw;
     	margin-bottom: 3vw;
     }
-    @media (min-width: 481px) and (max-width: 767px) {
+    @media (min-width: 500px) and (max-width: 767px) {
   
     	.grid-item1{
     		font-size: 2vw;
@@ -869,10 +898,10 @@ body,html{
 
   
 	}
-
-	@media (min-width: 320px) and (max-width: 480px) {
-  
-.grid-item1{
+	@media (min-width: 400px) and (max-width:500px) 
+	{
+		
+		.grid-item1{
     		width: 30vw;
 			
 			 grid-column: 1 / span 2;
@@ -882,6 +911,9 @@ body,html{
 			display: grid;
 			grid-template-columns: auto;
 			grid-row-gap: 1.5vh;
+			margin-right: 0vw;
+			margin-left: 2vw;
+
 
 		}
 		.wrapper1{
@@ -896,7 +928,7 @@ body,html{
 		.images{
 		height: 90px;	
 		margin-left: 6vw;
-		padding-left: 5vw;
+		padding-left: 8.5vw;
 	
 	}
 		.whyassociate
@@ -919,6 +951,62 @@ body,html{
 		.ashead{
 			font-size: 14px;
 			width: 50vw;
+		}
+}
+	
+
+	@media (min-width: 320px) and (max-width: 399px) {
+  
+.grid-item1{
+    		width: 30vw;
+			
+			 grid-column: 1 / span 2;
+
+		}
+		.wrapper{
+			display: grid;
+			grid-template-columns: auto;
+			grid-row-gap: 1.5vh;
+
+		}
+		.wrapper1{
+			padding-top: 1.5vh;
+			display: grid;
+			grid-template-columns: auto;
+			grid-row-gap:1.5vh;
+			padding-left: 2.5vw;	
+
+		
+		}
+		.images{
+		height: 90px;	
+		margin-left: 6vw;
+		padding-left: 7vw;
+	
+	}
+		.whyassociate
+		{
+		
+					font-size:25px;
+					margin-top: 10vw;
+					
+						
+		
+			
+		}
+		.as{
+			font-size:14px;
+			width: 50vw;
+			padding-top: 1vh;
+			padding-left:1vh;
+				
+
+			
+		}
+		.ashead{
+			font-size: 14px;
+			width: 50vw;
+			
 		}
 }
 
@@ -967,6 +1055,7 @@ body,html{
 		}
 		.as{
 			font-size:18px;
+
 		}
 		.ashead{
 			font-size: 18px;
@@ -1178,7 +1267,7 @@ body,html{
 			height: 100px;
 			width:100px;
 		}
-	 @media (min-width: 481px) and (max-width: 768px){
+	 @media (min-width: 501px) and (max-width: 768px){
 			.grid-container{
 				display:grid;
 				justify-content: space-around;
@@ -1200,8 +1289,7 @@ body,html{
 		}
 
 		}
-
-	@media (min-width: 320px) and (max-width: 480px){
+		@media (min-width: 400px) and (max-width: 500px){
 		.grid-container{
 				display:grid;
 				justify-content: space-around;
@@ -1215,7 +1303,7 @@ body,html{
 			}
 
 			.rchead{
-			font-size: 3vh;
+			font-size: 2.5vh;
 		}
 		.rc{
 			font-size: 2vh;
@@ -1224,8 +1312,38 @@ body,html{
 			font-size: 30px;	
 		}
 		.reachimg{
-			height: 11vh;
-			width:60px;
+			height: 10vh;
+			width:auto;
+		}
+
+
+	}
+
+	@media (min-width: 320px) and (max-width: 399px){
+		.grid-container{
+				display:grid;
+				justify-content: space-around;
+				grid-template-columns: auto auto;
+				grid-row-gap: 5.5vh;
+				padding: 0vw 10vw;
+
+			}
+			.grid-item{
+				width: 30vw;
+			}
+
+			.rchead{
+			font-size: 2.5vh;
+		}
+		.rc{
+			font-size: 2vh;
+		}
+		.reachhead{
+			font-size: 30px;	
+		}
+		.reachimg{
+			height: 10vh;
+			width:auto;
 		}
 
 
@@ -1824,12 +1942,28 @@ footer {
 	grid-area: icon3;
 	margin: auto;
   }
+  @media only screen and (max-width: 768px) {
+	.icon1{
+		margin-left:-20px;
+	}
+	.icon2{
+		margin-left:4px;
+	}
+	.icon3{
+		margin-left:5px;
+	}
+	.Excelbrand
+	{
+		margin-left:-20px;
+	}
+}
+  
   
   @media only screen and (max-width: 500px) {
   
 	.footerDiv {
 	  grid-template-areas: "ibeto . . . excel" ". icon1 icon2 icon3 ." ". brand brand brand .";
-	  height: 175px;
+	  height: 180px;
 	  padding-top: 15px;
 	  font-size: 12px;
 	}
@@ -1841,6 +1975,7 @@ footer {
 		font-size: 17px;
 		padding: 0 4px;
 	}
+
   
 	.icon3 img{
 	  height: 32px;
@@ -1856,104 +1991,134 @@ footer {
   }
   
 
+ 
+
   #contactSection .section-content {
-    text-align: center;
- background-image: url("images/email-pattern.png");
+  text-align: center;
+  /*margin-top:-2em;*/
+   background-image: url("images/email-pattern.png");
+  padding:0;
+}
+
+
+.contact-card{
+  text-align: left;
+  display: inline-block;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-card p{
+  margin-bottom: 0rem;
+}
+
+.contact-img{
+  width: 200px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0px 10px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 50%;
+}
+
+.contact-dets{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.contact-mail, .contact-tel{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.contact-mail:hover, .contact-tel:hover{
+  color: #007bff;
+  text-decoration: none;
+}
   
+  @media only screen and (max-width:500px){
 
-    /*margin-top:-2em;*/
-    padding:5vw;
-  }
-
-
-  .contact-card{
-    text-align: left;
-    display: inline-block;
+.contact-card{
     margin: 30px auto;
     width: 100%;
-    max-width: 600px;
-    margin-left: 10vw;
   }
 
+  .content h1{
+    font-size: 2.5rem;
+  }
+
+  .image-container{
+    width: initial;
+  }
+  .content p,ul{
+    font-size: 18px;
+  }
+  
   .contact-card p{
-    margin-bottom: 0rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+   #contactSection .section-content{
+    margin-top: 5vh;
+    max-width: 100vw;
+
+  }
+
+  #contactSection h1{
+    margin-bottom: 0px;
   }
 
   .contact-img{
-    width: auto;
-    height:160px;
-    vertical-align: middle;
-    margin: 0px 20px;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 50%;
-    
+    width: 90px;
   }
-
-
-
   .contact-dets{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.5;
-    font-size: 1.75rem;
-    
+    line-height: 1.2;
+    font-size: 14px;
+    word-wrap: break-word;
   }
-
-  .contact-mail, .contact-tel{
-    text-decoration: none;
-    color: inherit;
-    transition: 0.5s;
   }
-
-  .contact-mail:hover, .contact-tel:hover{
-    color: #007bff;
-    text-decoration: none;
-  }
-
-
-  @media only screen and (max-width: 500px) {
-    .contact-card p{
-      font-size: 1.5rem;
-      line-height: 1.8rem;
-
-    }
-
-    #contactSection .section-content{
-      margin-top: 5vh;
-      max-width: 100vw;
-      text-align: center;
+  @media (min-width: 1200px) and (max-width: 1800px){
+  	 #contactSection .section-content {
+  text-align: center;
+  /*margin-top:-2em;*/
+   background-image: url("images/email-pattern.png");
+  padding:0;
+}
 
 
-    }
+.contact-card{
+  text-align: left;
+  display: inline-block;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 430px;
+}
 
-    #contactSection h1{
-      margin-bottom: 0px;
-    }
+.contact-card p{
+  margin-bottom: 0rem;
+}
 
-    .contact-img{
-      width: auto;
-      height: 25vh;
-      margin-left:8vw;
-      margin-bottom:30px;
+.contact-img{
+  width: auto;
+  height: 130px;
+  vertical-align: middle;
+  margin: 0px 10px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 50%;
+}
 
-      
-    }
-    .contact-dets{
-    
-      line-height: 1.2;
-      font-size: 16px;
-      word-wrap: break-word;
-      margin-left:5px;
-      
-    }
-    #navlogo
-    {
-      width:50px;
-      height:50px;
-  }
+.contact-dets{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-size: 1.45rem;
+}
 
 
-  }
-  
-  /* Footer ends here */
+  	}  /* Footer ends here */
