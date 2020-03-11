@@ -22,8 +22,8 @@ jobs:
     - uses: abinmn/gcp-storage-bucket-action@v1.0
       with:
         service_key: "${{ secrets.service_key }}"
-        project: marketing
+        project: excelmec
         build_folder: "${{ github.workspace }}"
-        bucket_name: www.excelmec.org
+        bucket_name: marketing.excelmec.org
         home_page_path: index.html
         error_page_path: index.html
